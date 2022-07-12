@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+// 7.12 리액트-리덕스 사용하기
 import './App.css';
+// import './components/redux_exercise';
+import CounterContainer from './components/CounterContainer';
+import TodoContainer from './components/TodosContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CounterContainer/>
+      <hr/>
+      <TodoContainer/>
     </div>
   );
 }
